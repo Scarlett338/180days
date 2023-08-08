@@ -82,6 +82,21 @@ a:hover{
 
 .res-banner{display: none;}
 
+/* day general */
+main{
+    position: relative;
+    top: 65px;
+    padding: 20px;
+    background-color: #000;
+    color: #E5E5E5;
+}
+
+#day-1-con{
+    background: url(https://free-images.com/or/0529/weather_lake_sunrise_morning.jpg) no-repeat;
+    height: 700px;
+    width: 100% auto;
+}
+
 /* 
 #000000
 #14213D
