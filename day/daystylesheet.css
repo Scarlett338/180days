@@ -1,0 +1,416 @@
+/* 
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF 
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+    min-height: 600px;
+}
+
+body h1, body h2, body h3{
+    margin: 0;
+}
+
+/* nav */
+.navbar-container{
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 111;
+}
+
+
+#scarlettlogo{
+    color: #FCA311;
+    padding: 17px;
+    padding-left: 50px;
+    float: left;
+    font-family: 'Satisfy', cursive, sans-serif;
+}
+
+#header-nav{
+    float: right;
+    right: 0px;
+    text-align: center;  
+    font-size: 1.1em;  
+}
+
+.navbar ul{
+    position: relative;
+    top: 20px;
+    padding-right: 50px;
+}
+
+.navbar li{
+    display: inline-block;
+    width: 120px;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    color: #14213D;
+}
+
+a:active{
+    color: #000;
+}
+
+a:hover{
+    color: #FCA311;
+}
+
+.day180banner img{
+    width: 100%;
+    position: relative;
+    top:65px;
+}
+.container-link{
+    position: relative;
+    top: 65px;
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: #FCA311;
+    height: 100%;
+}
+
+/* day general */
+main{
+    position: relative;
+    top: 65px;
+    padding: 20px;
+/*     padding-left: 50px; */
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+
+
+/********************************************** Responsive ********************************************************/
+
+/************************************** COL *************************************/
+
+/* General CSS */
+[class*="col-"]{
+    position: relative;
+    float:left;
+    flex: 0 0 auto;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+  /* For mobile phones: */
+.col-xxs-12{
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    flex: 0 0 auto;
+}
+.visible-xxs{display: block;}
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-xs-1 {width: 8.33%; flex:0 0 auto;}
+    .col-xs-2 {width: 16.66%; flex:0 0 auto;}
+    .col-xs-3 {width: 25%; flex:0 0 auto;}
+    .col-xs-4 {width: 33.33%; flex:0 0 auto;}
+    .col-xs-5 {width: 41.66%; flex:0 0 auto;}
+    .col-xs-6 {width: 50%; flex:0 0 auto;}
+    .col-xs-7 {width: 58.33%; flex:0 0 auto;}
+    .col-xs-8 {width: 66.66%; flex:0 0 auto;}
+    .col-xs-9 {width: 75%; flex:0 0 auto;}
+    .col-xs-10 {width: 83.33%; flex:0 0 auto;}
+    .col-xs-11 {width: 91.66%; flex:0 0 auto;}
+    .col-xs-12 {width: 100%; flex:0 0 auto;}
+    .visible-xxs{display: none;}
+    .visible-xs{display: block;}
+    .collapsed-xs{display: none;}
+}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-1 {width: 8.33%; flex:0 0 auto;}
+    .col-sm-2 {width: 16.66%; flex:0 0 auto;}
+    .col-sm-3 {width: 25%; flex:0 0 auto;}
+    .col-sm-4 {width: 33.33%; flex:0 0 auto;}
+    .col-sm-5 {width: 41.66%; flex:0 0 auto;}
+    .col-sm-6 {width: 50%; flex:0 0 auto;}
+    .col-sm-7 {width: 58.33%; flex:0 0 auto;}
+    .col-sm-8 {width: 66.66%; flex:0 0 auto;}
+    .col-sm-9 {width: 75%; flex:0 0 auto;}
+    .col-sm-10 {width: 83.33%; flex:0 0 auto;}
+    .col-sm-11 {width: 91.66%; flex:0 0 auto;}
+    .col-sm-12 {width: 100%; flex:0 0 auto;}
+    .visible-xxs{display: none;}
+    .visible-xs{display: block;}
+}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%; flex:0 0 auto;}
+    .col-md-2 {width: 16.66%; flex:0 0 auto;}
+    .col-md-3 {width: 25%; flex:0 0 auto;}
+    .col-md-4 {width: 33.33%; flex:0 0 auto;}
+    .col-md-5 {width: 41.66%; flex:0 0 auto;}
+    .col-md-6 {width: 50%; flex:0 0 auto;}
+    .col-md-7 {width: 58.33%; flex:0 0 auto;}
+    .col-md-8 {width: 66.66%; flex:0 0 auto;}
+    .col-md-9 {width: 75%; flex:0 0 auto;}
+    .col-md-10 {width: 83.33%; flex:0 0 auto;}
+    .col-md-11 {width: 91.66%; flex:0 0 auto;}
+    .col-md-12 {width: 100%; flex:0 0 auto;}
+    .visible-xs{display: none;}
+    .visible-md{display: block;}
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-1 {width: 8.33%; flex:0 0 auto;}
+    .col-lg-2 {width: 16.66%; flex:0 0 auto;}
+    .col-lg-3 {width: 25%; flex:0 0 auto;}
+    .col-lg-4 {width: 33.33%; flex:0 0 auto;}
+    .col-lg-5 {width: 41.66%; flex:0 0 auto;}
+    .col-lg-6 {width: 50%; flex:0 0 auto;}
+    .col-lg-7 {width: 58.33%; flex:0 0 auto;}
+    .col-lg-8 {width: 66.66%; flex:0 0 auto;}
+    .col-lg-9 {width: 75%; flex:0 0 auto;}
+    .col-lg-10 {width: 83.33%; flex:0 0 auto;}
+    .col-lg-11 {width: 91.66%; flex:0 0 auto;}
+    .col-lg-12 {width: 100%; flex:0 0 auto;}
+    .visible-md{display: none;}
+    .visible-lg{display: block;}
+}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%; flex:0 0 auto;}
+    .col-xl-2 {width: 16.66%; flex:0 0 auto;}
+    .col-xl-3 {width: 25%; flex:0 0 auto;}
+    .col-xl-4 {width: 33.33%; flex:0 0 auto;}
+    .col-xl-5 {width: 41.66%; flex:0 0 auto;}
+    .col-xl-6 {width: 50%; flex:0 0 auto;}
+    .col-xl-7 {width: 58.33%; flex:0 0 auto;}
+    .col-xl-8 {width: 66.66%; flex:0 0 auto;}
+    .col-xl-9 {width: 75%; flex:0 0 auto;}
+    .col-xl-10 {width: 83.33%; flex:0 0 auto;}
+    .col-xl-11 {width: 91.66%; flex:0 0 auto;}
+    .col-xl-12 {width: 100%; flex:0 0 auto;}
+    .visible-lg{display: none;}
+    .visible-xl{display: block;}
+}
+
+
+/* day^^^=======================================================individual */
+
+/* day1^^^ */
+.day1con{
+    background: url(https://free-images.com/or/0529/weather_lake_sunrise_morning.jpg) no-repeat;
+    height: 700px;
+    width: 100% auto;
+}
+
+/* day2^^^ */
+
+.day2main div:first-child.day2con h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    text-shadow: #FCA311 3px 1px 3px;
+}
+
+.day2main{
+    font-size: 1.3em;
+    overflow: hidden;
+    text-align: center;
+    min-height: 1100px;
+}
+
+.day2main .flexCon{
+    display:flex;
+    justify-content: space-around;
+}
+
+.day2main .flexCol{
+    margin: 15px;
+}
+
+.day2main .day2-f1{
+flex: 1 1 50%;
+justify-content: center;
+}
+
+
+/* day2-f1 input responsive */
+@media only screen and (max-width: 1000px) {
+    .day2-f1{
+        flex-wrap: wrap;
+    }
+    .day2main .day2-f1 .flexCol{
+        margin: 20px;
+    }
+}
+
+.day2main .day2-f1 .flexCol{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.day2main .day2-f1 input{
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    left: -25px;
+    box-shadow: #FCA311 5px 5px;
+}
+
+.day2main .day2-f2{
+    flex:1 1 100%;
+    text-align: center;
+}
+
+.day2main button{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #FCA311 5px 5px;
+    margin-bottom: 20px;
+}
+
+.day2main .day2-f3 {
+    text-align: center;
+    visibility: hidden;
+
+}
+
+.day2-f3 #day2sol1{
+    position: relative;
+    left: -200px;
+}
+
+.day2main .day2-f4{
+    flex-wrap: wrap;
+}
+
+.day2main .day2-f4 .main{
+    width: 100%;
+}
+
+.day2main .day2-f4 .flexCol{
+    background-color: #E5E5E5;
+    width: 250px;
+    height: 250px;
+    background-color: #2FFF7F;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+}
+
+.day2main .day2-f4 div{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: center;
+}
+
+.day2main .day2-f4 div:nth-child(1){
+    background: url("https://free-images.com/lg/a714/sleep_tired_bed_kermit.jpg") no-repeat;
+    background-size: cover;
+}
+
+.day2main .day2-f4 div:nth-child(2){
+    background: url("https://free-images.com/sm/ed6e/dog_kitten_cat_kitty.jpg") no-repeat;
+    background-size: cover;
+}
+
+.day2main .day2-f4 div:nth-child(3){
+    background: url("https://free-images.com/lg/f7ff/grilled_crab_meat_vegetables.jpg") no-repeat;
+    background-size: cover;
+}
+
+.day2main .day2-f4 div:nth-child(4){
+    background: url("https://free-images.com/lg/4242/back_pain_massage_ache.jpg") no-repeat;
+    background-size: cover;
+}
+
+.day2main .day2-f4 div:nth-child(5){
+    background: url("https://free-images.com/lg/c36b/mural_silence_street_art_0.jpg") no-repeat;
+    background-size: cover;
+}
+
+.day2main .day2-f4 div:nth-child(6){
+    background: url("https://free-images.com/lg/3f89/party_lights_music_night.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.day2main .day2-f4 div:hover h2{
+    width: 300px;
+    background-color: #FCA311;
+}
+
+.day2main .mainCol{
+    color: #FCA311;
+    font-size: 1.5em;
+}
+
+
+.day2boxContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.day2box{
+    width: 300px;
+    height: 30px;
+    background-color: #2FFF7F;
+    border: 1px solid black;
+}
+
+.day2hide{
+    visibility:hidden;
+} 
+
+/* ---------------------------------------------------angry Level */
+
+.day2-f2 .day2boxContainer div:nth-child(10){
+}
+
+.day2-f4 div{
+}
+
+/* day4^^^ */
+
+
+
+
+/* 
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF 
+*/
+
+
+
+
+
+
+
