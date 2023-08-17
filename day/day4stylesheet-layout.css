@@ -576,7 +576,7 @@ main{
     height: 30px;
 }
 
-.layout4 a:link, .layout a:visited{
+.layout4 a:link, .layout4 a:visited{
     text-decoration: none;
     color: #14213D;
 }
