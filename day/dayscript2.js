@@ -52,7 +52,7 @@ for (var i=1;i<=angryLevel;i++){
     }
     if (i>=7 && i <=10){
         colorCode="#FF1700";
-        msg = "<h2>Oops...... Good Luck too you......</h2>"
+        msg = "<h2>Oops...... Good Luck to you......</h2>"
         fontColor ="white"
     }
 document.querySelector(`#day2box${i}`).style.backgroundColor = colorCode;
