@@ -61,11 +61,11 @@ a:link,a:visited{
     color: #14213D;
 }
 
-a:active{
+.navbar-container a:active{
     color: #000;
 }
 
-a:hover{
+.navbar-container a:hover{
     color: #FCA311;
 }
 
@@ -94,11 +94,11 @@ a:hover{
     justify-content: space-around;
 }
 
-.container-link .day-link{
+.container-link .day-link {
     width: 250px;
-    padding: 10px;
+    padding: 25px;
     margin: 10px;
-    height: 105px;
+    height: 250px;
     background-color:rgba(229, 229, 229, 0.3);
     border-radius: 15px;
     text-align: center;
@@ -107,18 +107,83 @@ a:hover{
     align-items: center;
 }
 
-.container-link div:hover, .container-link div:hover a{
+
+.container-link .day-link .card-title{
+
+}
+
+/* .container-link div:hover, .container-link div:hover a{
     background-color: #14213D;
     color: #E5E5E5;
-}
+} */
 
 .container-link .day-link-highlight{
     background-color:rgba(229, 229, 229, 0.7);
 }
 
+/* day preview */
+
+.container-link a:hover .card-title{
+/*     border: #14213D solid 2px;
+    border-radius: 10px;
+    background-color: #14213d;
+    padding: 20px;
+    color: #fff;
+    width: 100%; */
+    display: none;
+}
+
+.container-link a:nth-last-child(1):hover > div.day-link{
+    background: url(../img/day1.jpg);
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
+
+.container-link a:nth-last-child(2):hover > div.day-link{
+    background: url(../img/day2.png);
+    background-size: cover;
+    background-position: -15px;
+    border: #14213D solid 3px;
+}
+
+.container-link a:nth-last-child(3):hover > div.day-link{
+    background: url(../img/day3.png);
+    background-size: cover;
+    background-position: -25px;
+    border: #14213D solid 3px;
+}
+
+.container-link a:nth-last-child(4):hover > div.day-link{
+    background: url(../img/day4.png);
+    background-size: cover;
+    background-position: -40px;
+    border: #14213D solid 3px;
+}
+
+.container-link a:nth-last-child(5):hover > div.day-link{
+    background: url(../img/day5.png);
+    background-size: cover;
+    background-position: -35px;
+    border: #14213D solid 3px;
+}
+
+.container-link a:nth-last-child(6):hover > div.day-link{
+    background: url(../img/day6.jpg);
+    background-size: cover;
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
 
 
 
+
+/* template */
+
+.container-link a:nth-last-child():hover > div.day-link{
+    background: url(../img);
+    background-size: cover;
+    background-position: 0px;
+}
 
 
 
