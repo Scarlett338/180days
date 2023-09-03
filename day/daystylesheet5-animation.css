@@ -1,0 +1,270 @@
+/* 黑
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF 
+*/
+
+*{
+    margin: 0;
+}
+
+.day5main{
+    padding: 0px;
+    padding-top: 0;
+}
+
+.day5main .day5con{
+    color: #FCA311;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  sea */
+
+.day5main .day5Background{
+    background: url(https://pikwizard.com/pw/medium/c01ac417184edd2a4f2862e57a5b3389.avif) no-repeat;
+    background-color: #14213D;
+    background-size: cover;
+    width: 99%;
+    height: 1000px;
+    margin: 0 auto;
+    background-position-y: -100px; 
+    position: relative;
+}
+
+@media screen and (min-width:1200px){
+    .day5main .day5con h3{
+        display: none;
+    }
+}
+
+/* small device */
+
+@media screen and (max-width:1199px) {
+    .day5main .day5Background{width: 99%;margin: auto;overflow-x: hidden;}
+    .day5main .day5con {
+        font-size: 0.8em;
+    }
+    .day5main .day5con h2{
+        display: none;
+    }
+    .day5main .day5con h3{
+        font-size: 2em;
+        color: white;
+    }
+    .day5main #fish1{
+        color: #f7bf67;
+        top:200px;
+        left: 300px;
+        animation: moveS1 25s linear infinite;
+    }
+    @keyframes moveS1 {
+        0%{
+            transform: translate3d(0,0,0);
+        }
+        10%{
+            transform: translate3d(100px,100px,0);
+        }
+        30%{
+            transform: rotateY(180deg);
+        }
+        40%{
+            transform: rotateY(360deg);
+        }
+        60%{
+            transform: translate3d(150px,50px,100px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        90%{
+            transform: rotateY(360deg);
+        }
+        100%{
+            transform: translate3d(0,0,0);
+        }
+    
+    }
+}
+
+
+/* fish*/
+.day5main .fish {
+    transition: all;
+    transform-style: preserve-3d;
+}
+
+.day5main .fish > i{
+    font-size: 80px;
+    z-index: 1;
+    position: absolute;
+/*     float: left;
+    position: relative;
+    top: -0px; */
+
+}
+
+.day5main #fish1{
+    color: #f7bf67;
+    top:200px;
+    left: 300px;
+    animation: move1 28s linear infinite;
+}
+
+/* #fish1:hover{
+    animation: move3 3s linear infinite;
+}
+ */
+
+@keyframes move1 {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    10%{
+        transform: translate3d(800px,300px,0);
+    }
+    30%{
+        transform: rotateY(180deg);
+    }
+    40%{
+        transform: rotateY(360deg);
+    }
+    60%{
+        transform: translate3d(550px,50px,100px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    90%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+
+}
+
+#fish2, #fish2:hover{
+    color: rgb(255, 246, 168);
+    top: 600px;
+    left: 300px;
+    font-size: 75px;
+    animation: move2 18s linear infinite;
+}
+
+@keyframes move2 {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    30%{
+        transform: translate3d(80px,-300px,0);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+#fish3{
+    color:rgb(178, 243, 255);
+    top: 400px;
+    right: 85px;
+    transform: rotateY(170deg);
+    animation: move3 12s infinite linear alternate;
+}
+
+@keyframes move3 {
+    0%{
+        transform: translate3d(0,0,0);
+        transform: rotateY(170deg);
+    }
+    30%{
+        transform: translate3d(0px,-300px,0);}
+    60%{
+        transform: scale3d(0.3,0.8,1);
+    }
+    90%{
+        transform: rotateY(360deg);
+    }100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+#fish4{ /* shrimp */
+    color: rgb(255, 210, 210);
+    top: 650px;
+    right: 200px;
+    font-size: 50px;
+    animation: move4 3s infinite linear alternate;
+}
+
+#fish5{ /* shrimp */
+    color: rgb(255, 210, 210);
+    top: 600px;
+    right: 260px;
+    font-size: 50px;
+    animation: move4 2s infinite linear alternate;
+}
+
+#fish6{ /* shrimp */
+    color: rgb(255, 210, 210);
+    top: 630px;
+    right: 350px;
+    font-size: 50px;
+    animation: move4 5s infinite linear alternate;
+}
+
+@keyframes move4 {
+    from{ 
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(0px,-80px,0px);
+    }
+}
+
+#fishMouse{
+    color:brown;
+    top: 150px;
+    right: 700px;
+    font-size: 50px;
+    animation: moveOt 2s infinite linear alternate;
+}
+
+@keyframes moveOt {
+    from{
+        transform: rotateX(0);
+    }
+    to{
+        transform: rotateX(180deg);
+    }
+}
+
+.day5Background:hover, .fish:hover{
+    cursor:grab;
+}
+
+
+
+/* 
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF 
+*/
+
+
+
+
+
+
+

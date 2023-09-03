@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 7 Booking system</title>
+
+    <link href="css/reset.css" rel="stylesheet"> 
+    <link href="daystylesheet.css" rel="stylesheet">
+    <link href="daystylesheet7.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b64fefc893.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <div class="navbar-container">    
+        <a href="https://scarlett338.github.io/portfolio/index.html"><h2 id="scarlettlogo">Scarlett</h2></a>
+        <nav id="header-nav" class="navbar collapsed-xs">
+            <ul class="nav">
+                <li><a href="https://scarlett338.github.io/portfolio/index.html"> Home </a></li>
+                <li><a href="https://scarlett338.github.io/180days/index.html"> 180 Challenge </a></li>
+                <li><a href="https://scarlett338.github.io/portfolio/aboutme.html"> About Me </a></li>
+            </ul>
+        </nav>        
+    </div>
+</header>
+
+<!-- main -->
+<main class="day7main">
+<h1>Booking system</h1>
+
+<section>
+    <h2>Log in</h2>
+    <form action="" method="post">
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="" name="username" value="" required minlength="2">
+    </div>
+    <div>
+        
+        <label for="password">Password</label>
+        <input type="password" id="" name="password" value="" required minlength="2">
+    </div>
+    <input type="submit" id="" name="submit" value="Log in">
+    </form>    
+</section>
+
+<section>
+    <h2>Book a table</h2>
+    <form action="" method="post">
+        <div>
+            <label for="booking_name">Name</label>
+            <input type="radio" name="mr" id="mr" value="mr"> 
+            <label for="mr">Mr</label>
+            <input type="radio" name="mr" id="ms" value="ms"> 
+            <label for="ms">Ms</label>
+            
+            <input type="text" name="booking_name" id="booking_name">
+        </div>
+        <div>
+            <label for="booking_tel">Contact Number</label>
+            <input type="tel" id="booking_tel" name="booking_tel" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$” > 
+        </div>
+        <div>
+            <label for="booking_ppl">Number of People</label>
+            <input type="range" name="booking_ppl" id="booking_ppl" min="1" max="8" value="4" oninput="this.nextElementSibling.value=this.value">
+            <output>4</output>
+        </div>
+        <div>
+            <label for="booking_date">Date</label>
+            <input type="date" name="booking_date" id="booking_date">
+        </div>
+        <div>
+            <label for="booking_time">Time</label>
+            <input type="time" name="" id="booking_time">
+        </div>
+        <div>
+            <label for="booking_location">Location</label>
+            <input id="booking_location" name="booking_location" list="location">
+            <datalist id="location">
+                <option value="Kowloon"></option>
+                <option value="Hong Kong" selected></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="food">Food set</label>
+            <select name="" id="food">
+                <optgroup label="Lunch">
+                    <option value="Set Lunch">Set $188</option>
+                    <option value="Set Lunch">Set $288 @ 2</option>
+                </optgroup>
+                <optgroup label="Dinner">
+                    <option value="Set Dinner">Set $480</option>
+                    <option value="Set Dinner">Set $780 @ 2</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="booking_req">Request</label>
+            <input type="checkbox" name="booking_req" id="booking_req" value="smoke-free"> Smoke-free zone
+            <input type="checkbox" name="booking_req" id="booking_req" value="out"> Outdoor
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="" id="policy" required> I agree to the cancellation policy
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Book">
+        </div>
+    </form>
+</section>
+
+
+<section>
+    <h2>Yearly fortune analysis</h2>
+    <form action="" method="post" id="form3">
+        <div>
+            <label for="birth">Date & Time of Birth</label>
+            <input type="datetime-local" name="" id="birth">
+        </div>
+        <div>
+            <label for="msg">What do you want to ask?</label><br/>
+            <textarea id="msg" cols="30" rows="10" form="form3"></textarea>
+            <br/>
+            <textarea id="msg" cols="30" rows="30" form="form3" readonly>This is a mesaage to me.</textarea>
+            <div>
+                <button onclick="alert('Are you sure you want to continue?')" name="Submit"> Submit
+<!--                     <img src="https://pikwizard.com/pw/medium/edc7f532bd525d0b4ca23bfb02a8a94d.avif" 
+                        alt="Submit the form" height="64" width="64">
+-->                    </button>             
+                </div>
+        </div>
+    </form>
+</section>
+
+
+<section>
+    <h2>Hand in your homework</h2>
+    <form action="" method="post">
+        <div>
+            <label for="url">GitHub website: </label>
+            <input type="url" name="hw" id="url">
+        </div>
+        <div>
+            <label for="hw">Select a file: </label>
+            <input type="file" name="hw" id="hw">
+        </div>
+        <div>
+            <label for="photo">Your signature:</label>
+            <input type="file" name="hw" id="photo">
+        </div>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        
+        <input type="submit" value="Submit">
+        <input type="hidden" id="custId" name="custId" value="3487"> <!-- hidden -->
+    </form>
+</section>
+
+
+
+<section>
+    <h2>Search</h2>
+    <form action="" method="post">
+        <div>
+            <label for="gsearch">Search in Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<section>
+    <h2>Rating videos</h2>
+        <div>
+            <video controls autoplay muted>
+                <source src="../img/video1.mp4" type="video/mp4">
+            </video>
+        </div>    
+
+<form action="" method="post">
+    <div>
+        <label for="rating_v1">Rating</label>
+        <input type="range" name="rating_v" id="rating_v1" min="1" max="5" oninput=" this.nextElementSibling.value=this.value">
+        <output>3</output>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+    <br>
+<div>            
+    <iframe src="https://www.youtube.com/embed/eoTpdTU8nTA?si=-8EtOlsy_3d9uOyx&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+    <form action="" method="post">
+        <div>
+            <label for="rating_v2">Rating</label>
+            <input type="range" min="1" max="5" name="ratev1" list="rating" id="ratev1">
+            <datalist id="rating">
+                <option value="1" label="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5" label="5"></option>
+            </datalist>
+
+<!--             <input type="range" name="rating_v" id="rating_v2" min="1" max="5" oninput="this.nextElementSibling.value=this.value">
+            <output>3</output>
+-->        </div>
+
+    <figure>
+        <img src="https://pikwizard.com/pw/medium/3c9ed6e1e50bcada3614faf4eb8698e8.avif" alt="photo" width="400px">
+        <figcaption>Photo of Lemon water</figcaption>
+    </figure>
+
+    <div>
+        <label for="rate3">Rating</label>
+        <input type="range" min="1" max="5" name="" id="rate3" list="ratings2">
+        <datalist id="ratings2">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+        </datalist>
+
+    </div>
+        <input type="submit" value="Submit">
+    </form>
+
+</section>
+<!--
+<section>
+    <h2></h2>
+    <form action="" method="post">
+        <iframe src="" frameborder="0" allow="camera 'none'; microphone 'none';"></iframe>
+    </form>
+</section>
+
+
+
+
+<section>
+    <h2></h2>
+    <form action="" method="post">
+
+    </form>
+</section>
+
+-->
+
+
+
+</main>
+
+<!-- footer -->
+<footer>
+
+</footer>
+
+<!-- script -->
+<script src="dayscript7.js"></script>    
+</body>
+</html>
+
+
+<!-- template -->
+
+<!-- 
+<section>
+    <h2></h2>
+    <form action="" method="post">
+
+    </form>
+</section>
+
+-->

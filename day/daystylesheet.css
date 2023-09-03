@@ -430,7 +430,75 @@ box-shadow: #E5E5E5 10px 10px 5px;
     text-align: end;
 }
 
-/* day4^^^ */
+/* day7^^^ form */
+.day7main h1{
+    text-align: center;
+    color: #F2E0D2;
+}
+
+.day7main section{
+    border: #14213D solid 10px;
+    background-color: #F2E0D2;
+    color: #D0604C;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.1em;
+    width: 80%;
+    margin: auto;
+}
+
+.day7main form > div, .day7main input[type="submit"]{
+    margin-top: 8px;
+}
+.day7main input[type="submit"], .day7main button, .day7main input[type="reset"]{
+    border-radius:5px ;
+    width: 100px;
+    height: 30px;
+    color: #D0604C;
+    background-color: #fff;
+}
+
+.day7main h2{
+    border-bottom: #14213D solid 2px;
+}
+
+.day7main video, .day7main iframe, .day7main img{
+    width: 400px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:575px) {
+    .day7main textarea, .day7main input{
+        width: 150px;
+        margin: auto;
+    }
+    .day7main input[type="checkbox"], .day7main input[type="radio"]{
+        width: 20px;
+    }
+    
+    .day7main section{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+/* day8^^^ canvas  */
+
+.day8main{
+/*     width: 100%;
+*/    min-height: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* day8^^^  */
 
 
 
@@ -438,15 +506,18 @@ box-shadow: #E5E5E5 10px 10px 5px;
 
 
 
-/* 
+/* 紅
+#D0604C
+#F2E0D2
+粉
+
 #000000
 #14213D
 #FCA311
 #E5E5E5
 #FFFFFF 
+灰白
 */
-
-
 
 
 

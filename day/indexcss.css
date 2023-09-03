@@ -74,118 +74,8 @@ a:link,a:visited{
     position: relative;
     top:65px;
 }
-.container-link{
-    position: relative;
-    top: 65px;
-    padding: 30px;
-    font-size: 1.5em;
-    background-color: #FCA311;
-    height: 100%;
-}
-
-
 
 .res-banner{display: none;}
-
-/* link */
-.container-link{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.container-link .day-link {
-    width: 250px;
-    padding: 25px;
-    margin: 10px;
-    height: 250px;
-    background-color:rgba(229, 229, 229, 0.3);
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container-link .day-link .card-title{
-
-}
-
-/* .container-link div:hover, .container-link div:hover a{
-    background-color: #14213D;
-    color: #E5E5E5;
-} */
-
-.container-link .day-link-highlight{
-    background-color:rgba(229, 229, 229, 0.7);
-}
-
-/* day preview */
-
-.container-link a:hover .card-title{
-/*     border: #14213D solid 2px;
-    border-radius: 10px;
-    background-color: #14213d;
-    padding: 20px;
-    color: #fff;
-    width: 100%; */
-    display: none;
-}
-
-.container-link a:nth-last-child(1):hover > div.day-link{
-    background: url(../img/day1.jpg);
-    background-position: -10px;
-    border: #14213D solid 3px;
-}
-
-.container-link a:nth-last-child(2):hover > div.day-link{
-    background: url(../img/day2.png);
-    background-size: cover;
-    background-position: -15px;
-    border: #14213D solid 3px;
-}
-
-.container-link a:nth-last-child(3):hover > div.day-link{
-    background: url(../img/day3.png);
-    background-size: cover;
-    background-position: -25px;
-    border: #14213D solid 3px;
-}
-
-.container-link a:nth-last-child(4):hover > div.day-link{
-    background: url(../img/day4.png);
-    background-size: cover;
-    background-position: -40px;
-    border: #14213D solid 3px;
-}
-
-.container-link a:nth-last-child(5):hover > div.day-link{
-    background: url(../img/day5.png);
-    background-size: cover;
-    background-position: -35px;
-    border: #14213D solid 3px;
-}
-
-.container-link a:nth-last-child(6):hover > div.day-link{
-    background: url(../img/day6.jpg);
-    background-size: cover;
-    background-position: -10px;
-    border: #14213D solid 3px;
-}
-
-
-
-
-/* template */
-
-.container-link a:nth-last-child():hover > div.day-link{
-    background: url(../img);
-    background-size: cover;
-    background-position: 0px;
-}
-
-
 
 /* 
 #000000
@@ -314,6 +204,128 @@ a:link,a:visited{
 
 
 
+/* link */
+
+.container-link{
+    position: relative;
+    top: 65px;
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: #FCA311;
+    height: 100%;
+}
+
+
+.container-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-link .day-link {
+    width: 250px;
+    padding: 25px;
+    margin: 10px;
+    height: 250px;
+/*     background-color:rgba(229, 229, 229, 0.3); */
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-link a:hover > div{
+    background: none !important;
+/*     background-color:rgba(252, 162, 17, 0.363) !important; */
+    background-color:#F2E0D2 !important;
+}
+
+.container-link a:hover .day-link-highlight{
+    background-color:#D0604C !important;
+}
+.container-link a:hover .card-title{
+    display:block;
+}
+
+
+/************************************************************ day preview *******************************************************/
+
+.container-link .card-title{
+    display: none;
+}
+
+.container-link #day1{
+    background: url(../img/day1.jpg);
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
+
+.container-link #day2{
+    background: url(../img/day2.jpg);
+    background-size: cover;
+    background-position: -15px;
+    border: #14213D solid 3px;
+}
+
+.container-link #day3{
+    background: url(../img/day3.png);
+    background-size: cover;
+    background-position: -25px;
+    border: #14213D solid 3px;
+}
+
+.container-link #day4{
+    background: url(../img/day4.jpg);
+    background-size: cover;
+    background-position: -40px;
+    border: #14213D solid 3px;
+}
+
+.container-link #day5{
+    background: url(../img/day5.jpg);
+    background-size: cover;
+    background-position: -35px;
+    border: #14213D solid 3px;
+}
+
+
+.container-link #day6{
+    background: url(../img/day6.jpg);
+    background-size: cover;
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
+
+
+
+
+
+/* template */
+
+.container-link #day{
+    background: url(../img/day.jpg);
+    background-size: cover;
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
+
+
+/* 
+a > day-link/day1 > card-title 
+*/
+
+
+/* 
+#000000
+#14213D
+#FCA311 							 RGB (252, 163, 17)						 
+#E5E5E5
+#FFFFFF 
+
+#F2E0D2 淺粉紅
+#D0604C 粉紅
+*/
 
 
 
