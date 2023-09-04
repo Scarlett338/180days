@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day 7 Booking system</title>
+    <title>day 7 Different forms</title>
 
     <link href="css/reset.css" rel="stylesheet"> 
     <link href="daystylesheet.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="draw();">
 <!-- header -->
 <header>
     <div class="navbar-container">    
@@ -33,7 +33,7 @@
 
 <!-- main -->
 <main class="day7main">
-<h1>Booking system</h1>
+<h1>Different forms</h1>
 
 <section>
     <h2>Log in</h2>
@@ -46,6 +46,14 @@
         
         <label for="password">Password</label>
         <input type="password" id="" name="password" value="" required minlength="2">
+    </div>
+    <div>
+        <label for="vcode">Verification code</label>
+        <input type="text" name="vcode" id="vcode">
+    </div>
+    <div>
+        <canvas id="verification" width="200" height="100"></canvas>
+        <i class="fa-solid fa-arrows-rotate" id="refreshcode"></i>
     </div>
     <input type="submit" id="" name="submit" value="Log in">
     </form>    

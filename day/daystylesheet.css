@@ -483,6 +483,9 @@ box-shadow: #E5E5E5 10px 10px 5px;
     }
 }
 
+.day7main canvas{
+    border: 1px solid #14213D;
+}
 
 
 /* day8^^^ canvas  */
