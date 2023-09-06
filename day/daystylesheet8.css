@@ -1,4 +1,3 @@
-
 /* 紅
 #D0604C
 #F2E0D2
@@ -11,9 +10,6 @@
 #FFFFFF 
 灰白
 */
-
-
-
 
 /* day8^^^ grid layout & effects  */
 body{
@@ -41,13 +37,16 @@ body{
     color: #000;
 }
 
+
+
+
 /* LAYOUT1 */
 
 .day8main .grid-container1{
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 50px 250px 400px 100px 50px;
+    grid-template-rows: 400px 50px 250px 400px 120px 400px 50px;
     grid-template-areas:
     "header header header"
     "nav    nav   nav"
@@ -120,6 +119,23 @@ body{
     margin: 5px 0 0;
 }
 
+.grid-container1 .content1 div{
+    background: url("https://pikwizard.com/pw/medium/1591be3c148f29cb2ee03955d4eb3ad6.avif") no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 350px;
+    background-position-y: -40px;
+    margin: 10px;
+}
+
+.grid-container1 .content2 div{
+    background: url("https://pikwizard.com/pw/medium/e1cf409e00d97d2197fa92e4d4350f99.avif") no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 350px;
+    margin: 10px;
+}
+
 .grid-container1 .sideAboutme{
     grid-area: sidea;
     display: flex;
@@ -182,7 +198,7 @@ body{
 
 .grid-container1 .sideFollow i{
     font-size: 1.3em;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .grid-container1 .footer{
@@ -194,9 +210,30 @@ body{
 
 
 /* LAYOUT2 */
-.grid-container1 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+}
+
+.grid-container2 {
+
+}
+.grid-container2 {
+
+}
+.grid-container2 {
+
+}
+.grid-container2 {
+
+}
 
 
+/* LAYOUT3 */
+.grid-container3 {
+
+}
 
 
 
