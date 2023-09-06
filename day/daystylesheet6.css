@@ -92,7 +92,7 @@ a:hover::after{
 }
 
 .bannerBig{
-    background: url("../img/garden_in_garden_nature.jpg") no-repeat;
+    background: url("website1/img/garden_in_garden_nature.jpg") no-repeat;
     width: 1500px;
     height: 100%;
     filter: sepia(0%);

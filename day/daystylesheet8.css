@@ -1,26 +1,217 @@
-/* 
+
+/* 紅
+#D0604C
+#F2E0D2
+粉
+
 #000000
 #14213D
 #FCA311
 #E5E5E5
 #FFFFFF 
+灰白
 */
 
 
 
 
+/* day8^^^ grid layout & effects  */
+body{
+    background-color:#000;
+
+}
+
+.day8main{
+    min-height: 1500px;
+    margin: 0 auto;
+    background-color:#000;
+    color: #D0604C;
+    padding-top: 0;
+    width: 75%;
+}
+
+.day8main h1{
+    text-align: center;
+    padding: 10px;
+    color: #FCA311;
+}
+
+.day8main h1:hover{
+    background: #FCA311;
+    color: #000;
+}
+
+/* LAYOUT1 */
+
+.day8main .grid-container1{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 50px 250px 400px 100px 50px;
+    grid-template-areas:
+    "header header header"
+    "nav    nav   nav"
+    "content content sidea"
+    "content content sidep"
+    "content content sidef"
+    "content content ."
+    "footer footer footer";
+    background-color: #fff;
+    border: #fff 2px solid;
+}
+
+.grid-container1 > div{
+/*     border: #14213D solid 2px;
+*/  
+    min-height: 50px;
+    padding: 20px;
+}
+
+.grid-container1 .header{
+    grid-area: header;
+    background: url("website1/img/garden_in_garden_nature.jpg") no-repeat;
+    background-size: cover;
+}
+
+.nav1 ul{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.nav1 li{
+    width: 100px;
+    padding: 12px;
+}
+
+.grid-container1 .nav1 {
+    grid-area: nav;
+    background-color: #D0604C;
+    z-index: 2;
+    display: inline-flex;
+}
+
+.nav1 a:link, .nav1 a:visited{
+    color: #fff;
+}
+
+.nav1 a:hover, .nav1 a:active{
+    color: #000;
+}
+
+
+.grid-container1 .content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F2E0D2;
+    border: #fff solid 10px;
+    border-right: 0;
+}
+
+.grid-container1 .con{
+    height: 50%;
+}
+
+.grid-container1 .con p{
+    margin: 5px 0 0;
+}
+
+.grid-container1 .sideAboutme{
+    grid-area: sidea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F2E0D2;
+    border: #fff solid 10px;
+}
+
+.grid-container1 .sideAboutme div{
+    background: url("https://pikwizard.com/pw/medium/3e3a84c092b4ec7dad7201ae11129727.avif") no-repeat;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.grid-container1 .sidePost{
+    grid-area: sidep;
+    background-color: #F2E0D2;
+    border: #fff solid 10px;
+    border-bottom: none;
+}
+
+.grid-container1 .sideAboutme,.grid-container1  .sidePost{
+    border-bottom: none;
+}
+
+.grid-container1 .sidePost div{
+    margin-top: 5px;
+}
+
+.grid-container1 .sidePost :nth-child(2){
+    background: url("https://pikwizard.com/pw/medium/1591be3c148f29cb2ee03955d4eb3ad6.avif") no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+}
+
+.grid-container1 .sidePost :nth-child(3){
+    background: url("https://pikwizard.com/pw/medium/e1cf409e00d97d2197fa92e4d4350f99.avif") no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+}
+
+
+.grid-container1 .sidePost :nth-child(4){
+    background: url("https://pikwizard.com/pw/medium/a39dfc9c9563a457f728a5301f6c95c6.avif") no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+}
+
+
+.grid-container1 .sideFollow{
+    grid-area: sidef;
+    background-color: #F2E0D2;
+    border: #fff solid 10px;
+}
+
+.grid-container1 .sideFollow i{
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.grid-container1 .footer{
+    grid-area: footer;
+    background-color: #D0604C;
+    border: #fff solid 10px;
+    border-top: none;
+}
+
+
+/* LAYOUT2 */
+.grid-container1 
 
 
 
 
-/* 
+
+/* 紅
+#D0604C
+#F2E0D2
+粉
+
 #000000
 #14213D
 #FCA311
 #E5E5E5
 #FFFFFF 
+灰白
 */
-
 
 
 
