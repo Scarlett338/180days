@@ -303,6 +303,19 @@ a:link,a:visited{
     border: #14213D solid 3px;
 }
 
+.container-link #day8{
+    background: url(../img/day8.jpg);
+    background-size: cover;
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
+
+.container-link #day9{
+    background: url(../img/day9.jpg);
+    background-size: cover;
+    background-position: -10px;
+    border: #14213D solid 3px;
+}
 
 
 
