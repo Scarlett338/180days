@@ -51,6 +51,15 @@ body h1, body h2, body h3{
     padding-right: 50px;
 }
 
+@media screen and (min-width: 1679px) {
+    #scarlettlogo{
+        padding-left: 250px;
+    }
+    .navbar ul{
+        padding-right: 250px;
+    }
+}
+
 .navbar li{
     display: inline-block;
     width: 120px;
@@ -77,13 +86,14 @@ a:link,a:visited{
 
 .res-banner{display: none;}
 
-/* 
-#000000
-#14213D
-#FCA311
-#E5E5E5
-#FFFFFF 
-*/
+/* .day180banner >div {
+    background: url("../img/180-home-big.png");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+} */
+
+
 /********************************************** Responsive ********************************************************/
 
 /************************************** COL *************************************/
@@ -213,13 +223,10 @@ a:link,a:visited{
     font-size: 1.5em;
     background-color: #FCA311;
     height: 100%;
-}
-
-
-.container-link{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0px auto;
 }
 
 .container-link .day-link {
@@ -235,6 +242,46 @@ a:link,a:visited{
     align-items: center;
 }
 
+@media screen and (min-width:1410px) {
+.container-link .day-link {
+    width: 300px;
+    padding: 25px;
+    margin: 10px;
+    height: 300px;
+}
+}
+
+@media screen and (min-width:1679px) {
+    main{
+        margin: 0 10%;
+    }
+}
+
+@media screen and (min-width:2475px) {
+    main{
+        margin: 0 20%;
+    }
+}
+
+/* 
+@media screen and (min-width:1410px) {
+    .container-link {
+        width: 90%; 
+    }
+}
+
+@media screen and (min-width:1679px) {
+    .container-link {
+        width: 80%; 
+    }
+}
+
+@media screen and (min-width:2099px) {
+    .container-link {
+        width: 70%; 
+    }
+}
+ */
 .container-link a:hover > div{
     background: none !important;
 /*     background-color:rgba(252, 162, 17, 0.363) !important; */
