@@ -360,7 +360,7 @@ a:link,a:visited{
 .container-link #day9{
     background: url(../img/day9.jpg);
     background-size: cover;
-    background-position: -10px;
+    background-position: 0px;
     border: #14213D solid 3px;
 }
 
