@@ -364,6 +364,12 @@ a:link,a:visited{
     border: #14213D solid 3px;
 }
 
+.container-link #day10{
+    background: url(../img/day10.jpg);
+    background-size: cover;
+    background-position: 0px -70px;
+    border: #14213D solid 3px;
+}
 
 
 
