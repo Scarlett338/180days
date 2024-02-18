@@ -420,19 +420,10 @@ li.block{
 Effect 5 hover
 **************************/
 
-.content::after{
-    background-color: #FFD040;
-    
-}
-
-
-h1.hoverEffect{
-    text-align: left;    
-}
-
 .hoverEffect .cu-arrow-con{
     position: absolute;
     right: 10px;
+    bottom: 10px;
     background-color: #FFD040;
     width: 50px;
     height: 50px;
@@ -440,24 +431,24 @@ h1.hoverEffect{
     visibility: hidden;
 }
 
-.cu-arrow{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    font-size: 16px;    
-    color: #000;
-}
-
-
-.cu-arrow-mouseover{
+.hoverEffect:hover .cu-arrow-con{
     visibility: visible;
 }
 
-.cu-arrow-mouseout{
-    
+.cu-arrow{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;    
+    color: #000;
+    opacity: 0;
 }
 
-
+.hoverEffect:hover .cu-arrow{
+    transform: rotate(30deg);
+    opacity: 1;
+    transition: 1s;
+}
 
 
 /* 
