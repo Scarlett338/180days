@@ -201,10 +201,27 @@ hoverElements.forEach((hoverElement) => {
   let arrowSpan = document.createElement("span");
   arrowSpan.innerHTML = `<span class="cu-arrow-con"><i class="fa-solid fa-arrow-right cu-arrow"></i></span>`;
   hoverElement.appendChild(arrowSpan);
+  hoverElement.addEventListener("mouseover", handleHover);
+  hoverElement.addEventListener("mouseout", handleMouseout);
 });
 
 //加入 hover effect
 
+function handleHover() {
+  let arrowCons = document.querySelectorAll(".cu-arrow-con");
+  arrowCons.forEach((arrowCon) => {
+    arrowCon.style.visibility = "visible";
+  });
+}
+
+function handleMouseout() {
+  let arrowCons = document.querySelectorAll(".cu-arrow-con");
+  arrowCons.forEach((arrowCon) => {
+    arrowCon.style.visibility = "hidden";
+  });
+}
+
+// 舊
 // 方法1
 
 // function handleClick() {

@@ -449,7 +449,7 @@ h1.hoverEffect{
 }
 
 
-.cu-arrow-con-mouseover{
+.cu-arrow-mouseover{
     visibility: visible;
 }
 
@@ -457,7 +457,12 @@ h1.hoverEffect{
     
 }
 
+
+
+
 /* 
+ookk
+
 h1.content::after{
     font: var(--fa-font-solid);
     content: "\f061";
