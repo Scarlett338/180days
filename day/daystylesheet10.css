@@ -1,0 +1,607 @@
+
+/* 紅
+#D0604C
+#F2E0D2
+粉
+
+    font-family: 'Satisfy', 'cursive', sans-serif;
+
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF 
+灰白
+*/
+
+/*************************
+Effect 1
+**************************/
+
+/* Splash screen */ 
+
+/*
+
+po fixed > absolute > relative 
+bottom, opacity
+
+*/
+
+.intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    background-color: #2e354f;
+    transition: 1s;
+    opacity: 1;
+}
+
+.logo-header{
+    color: #f24965;
+    font-family: 'Satisfy', 'cursive', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: -50px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 0px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/*************************
+Effect 1 - subscription box pop up
+**************************/
+
+.sub-box-container{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    max-width: 100%;
+    width: 680px;
+    height: 425px;
+    background-color: #F2E0D2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -100vh;
+}
+
+.row-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.row-close i{
+    font-size: 25px;
+}
+
+.other-button{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+.row-close .other-button{
+    background-color: #F2E0D2;
+    width: 30px;
+    height: 30px;
+}
+
+
+.row-detail{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    position: relative;
+    top:-30px;
+}
+
+
+.sub-box-container .sub-logo{
+    color: #D0604C;
+    font-size: 60px;
+    font-family: 'Satisfy', 'cursive', sans-serif;
+    margin-bottom: 20px;
+}
+
+.row-detail p{
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+.row-detail h3{
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+body.active{
+    opacity: 0.5;
+}
+
+.input{
+    display: inline-block;
+}
+
+.input input{
+    background-color: #F2E0D2;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-bottom: #000 1px solid;
+    margin: 0 10px;
+}
+
+.sub-box-container .sub-button{
+    display: inline-block;
+    border: #000 solid 1px;
+    border-radius: 0;
+    color: #000;
+    width: 100px;
+    height: 50px;
+    background-color: #F2E0D2;
+}
+
+.sub-box-container .sub-button:hover{
+    background-color: #D0604C;
+    color: #F2E0D2;
+}
+
+/*************************
+Effect 2
+**************************/
+
+#preloader{
+    background: #2e354f url(../img/loading-1-2e354f.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+/*************************
+Effect 3
+**************************/
+
+.effect3 {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    top: -100vh;
+    left: 0;
+    transition: 1s;
+}
+
+.effect3 .title{
+    font-family: "Rubik-Doodle-Shadow", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.effect3 .title.active{
+    opacity: 1;
+}
+
+.effect3 .title.fade{
+    left: 52%;
+    opacity: 0;
+}
+
+.effect3 .blocks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.block{
+    position: absolute;/* 待 */
+    display: block;
+    height: 100vh;
+    transition: 1s; 
+    z-index: 3;
+    left: 0;
+}
+
+.block-1.active{
+    width: 5px;
+    background-color: #F2E0D2;
+    left: 6%;
+}
+
+.block-2.active{
+    width: 50px;
+    background-color: greenyellow;
+    left: 12%;
+}
+
+.block-3.active{
+    width: 20px;
+    background-color: aqua;
+    left: 28%;
+}
+
+.block-4.active{
+    width: 45px;
+    background-color: rgb(190, 0, 32);
+    left: 67%;
+}
+
+.block-5.active{
+    width: 10px;
+    background-color:coral;
+    left: 87%;
+}
+
+.block-6.active{
+    width: 70px;
+    background-color:#000;
+    left: 92%;
+}
+
+.block.fade{
+    transition: 2s; 
+    width: 5px;
+    left: 0;
+}
+
+
+/*************************
+Effect 3
+**************************/
+
+.effect4 {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+
+/*     top: 0;
+    z-index: 20; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect4 .left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #F2E0D2;
+    color: #D0604C;
+}
+
+.effect4 h2{
+    font-size: 45px;
+    margin: 40px;
+}
+
+
+.effect4 button{
+    margin: 0 40px;
+}
+
+.effect4 #effect4Button-3{
+    visibility: hidden;
+    position: relative;
+}
+
+.effect4 .right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D0604C;
+    color: #F2E0D2;
+}
+
+.effect4 img{
+    
+}
+
+
+/* 
+TweenMax 
+
+ul.blocks{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.block{
+    height: 100vh;
+}
+
+
+.block-1.active{
+    width: 0.2;
+    margin: 0 10px;
+    background-color: #F2E0D2;
+}
+
+.block-2.active{
+    width: 1.2%;
+    margin: 0 100px 0 20px;
+    background-color: greenyellow;
+}
+
+.block-3.active{
+    width: 0.2%;
+    margin: 0 10px;
+    background-color: aqua;
+}
+
+.block-4.active{
+    width: 0.2%;
+    margin: 0 10px;
+    background-color: rgb(190, 0, 32);
+}
+
+.block-5.active{
+    width: 0.2%;
+    margin: 0 10px;
+    background-color:coral;
+}
+
+.block-6.active{
+    width: 0.2%;
+    margin: 0 10px;
+    background-color:#000;
+}
+
+.block.fade{
+    transition: 2s; 
+    width: 0.2%;
+    margin: 0 10px;
+}
+
+
+ */
+
+
+
+/*************************
+Effect 5 hover
+**************************/
+
+.content::after{
+    background-color: #FFD040;
+    
+}
+
+
+h1.hoverEffect{
+    text-align: left;    
+}
+
+.hoverEffect .cu-arrow-con{
+    position: absolute;
+    right: 10px;
+    background-color: #FFD040;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.cu-arrow{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 16px;    
+    color: #000;
+}
+
+
+.cu-arrow-con-mouseover{
+    visibility: visible;
+}
+
+.cu-arrow-mouseout{
+    
+}
+
+/* 
+h1.content::after{
+    font: var(--fa-font-solid);
+    content: "\f061";
+    color: #000;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    right: 300px;
+}
+ */
+
+
+
+
+/* 
+js: add span(cu-arrow) inside h2
+css: 最右, 
+js: when hover xxx, class name change (cu-arrow-hover)
+js: when moveout xxx, class name change (cu-arrow-moveout)
+
+
+
+
+
+*/
+
+
+
+/*************************
+General
+**************************/
+
+@font-face {
+    font-family: "Rubik-Doodle-Shadow";
+    src: url(../font/RubikDoodleShadow-Regular.ttf) format("truetype");
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.effect{
+    font-family: 'Catamaran', sans-serif;
+    background-color: #2e354f;
+    color: #f24965;
+    font-size: 5rem;
+}
+
+.navbar-container{
+    top: 0;
+}
+
+main{
+    background-color: #000;
+    height: 100vh;
+    min-height: 2000px;
+    top: 65px;
+    padding: 0;
+}
+
+main > h1 {
+    text-align: center;
+    color: #D0604C;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #F2E0D2;
+}
+
+button.red-button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: #D0604C solid 5px;
+    border-radius: 20px;
+    color: #D0604C;
+    background-color: #F2E0D2;
+    cursor:pointer;
+}
+
+main{
+    height: 120%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width-container{
+    max-width: 1400px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 600px;
+    border: #F2E0D2 solid 1px;
+    padding: 0;
+    height: 100%;
+    min-height: 400px;
+    margin: 20px 0;
+}
+
+.img-Container{
+    max-width: 600px;
+    width: 60%;
+    height: auto;
+}
+
+img{
+    display: block;
+}
+
+.content-Container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content{
+
+}
+
+
+.red-button:hover{
+    background-color: #D0604C;
+    color: #F2E0D2;
+}
+

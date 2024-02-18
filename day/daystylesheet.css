@@ -28,7 +28,7 @@ body h1, body h2, body h3{
     height: 65px;
     background-color: #fff;
     position: fixed;
-    z-index: 111;
+    z-index: 10;
 }
 
 
@@ -37,7 +37,7 @@ body h1, body h2, body h3{
     padding: 17px;
     padding-left: 50px;
     float: left;
-    font-family: 'Satisfy', cursive, sans-serif;
+    font-family: 'Satisfy', 'cursive', sans-serif;
 }
 
 #header-nav{

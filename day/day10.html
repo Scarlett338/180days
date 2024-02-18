@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Animation Demo</title>
+
+    <link href="css/reset.css" rel="stylesheet"> 
+    <link href="daystylesheet.css" rel="stylesheet">
+    <link href="daystylesheet10.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b64fefc893.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- effect 1 -->
+<div class="intro effect1">
+    <h1 class="logo-header">
+        <span class="logo">S</span><span class="logo">c</span><span class="logo">a</span><span class="logo">r</span><span class="logo">l</span><span class="logo">e</span><span class="logo">t</span><span class="logo">t</span>
+    </h1>
+</div>
+
+<!-- newslettr-form-popup -->
+<div class="sub-box-container">
+    <div class="row-close">
+        <button class="other-button" id="close-mark">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="row row-detail">
+        <h2 class="sub-logo">Scarlett</h2>
+        <p>Welcome to my page! Please enjoy the beautiful and sophisticated animation made by javascript and css.</p>
+        <h3>Subscribe for more</h3>
+    </div>
+    <div class="row">
+        <form id="subscription">
+            <div class="input">
+            <input type="text" id="name-input" placeholder="Name" />
+            </div>
+        <div class="input">
+            <input type="email" id="email-input" placeholder="Email Address*"/>
+        </div>
+        <button class="sub-button" type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+</div>
+
+<!-- effect 2 -->
+<div id="preloader"></div>
+
+<!-- effect 3 -->
+<div class="effect effect3">
+    <div class="titles">
+        <div class="title title-1"><h1>Get</h1></div>
+        <div class="title title-2"><h1>Started</h1></div>
+        <div class="title title-3"><h1>Now</h1></div>
+    </div>
+    <ul class="blocks">
+        <li class="block block-1"></li>
+        <li class="block block-2"></li>
+        <li class="block block-3"></li>
+        <li class="block block-4"></li>
+        <li class="block block-5"></li>
+        <li class="block block-6"></li>
+    </ul>
+</div>
+
+<!-- effect 4 --> 
+<!-- 
+
+1. css整成 final look
+
+2. 
+.effect4{
+    transform: scaleY(0); // 唔出現
+    transform-origin: bottom;
+}
+
+img, p, .box{
+    opacity: 0;
+}
+
+img {
+    transform: translateY(-200px);
+}
+
+
+
+-->
+<div class="effect4">
+    <div class="left">
+        <h2>Animation Lights Up the World</h2>
+        <button class="red-button" id="effect4Button-2">Try it</button>
+    </div>
+
+    <div class="right">
+        <img src="../img/25-popcorn-64px.png" id="popcorn"/>
+        <img src="../img/26-3d-glasses-64px.png" id="glasses"/>
+        <img src="../img/27-ticket-64px.png" id="ticket"/>
+        <img src="../img/smiley_TDFW.png" id="ticket"/>
+        <div class="box"></div>
+        <button class="red-button" id="effect4Button-3">Back</button>
+    </div>
+</div>
+
+
+
+<!-- header -->
+<header class="header dimmer-header">
+    <div class="navbar-container">    
+        <a href="https://scarlett338.github.io/portfolio/index.html"><h2 id="scarlettlogo">Scarlett</h2></a>
+        <nav id="header-nav" class="navbar collapsed-xs">
+            <ul class="nav">
+                <li><a href="https://scarlett338.github.io/portfolio/index.html"> Home </a></li>
+                <li><a href="https://scarlett338.github.io/180days/index.html"> 180 Challenge </a></li>
+                <li><a href="https://scarlett338.github.io/portfolio/aboutme.html"> About Me </a></li>
+            </ul>
+        </nav>        
+    </div>
+</header>
+
+<!-- main -->
+<main class="day10main dimmer-main">
+    <h1 class="content1">Effect & Animation</h1>
+    <h1 class="hoverEffect">Effect & Animation</h1>
+    <h1 class="hoverEffect">Effect & Animation</h1>
+    <section>
+        <div class="width-container">
+            <div class="container">
+                <div class="img-Container">
+                    <img src="https://placehold.co/600x400" alt=""/> <!-- 400x266 -->
+                </div>
+                <div class="content-Container">
+                    <h2 class="content">Effect 1 - Logo Display with Subscription Box</h2>
+                    <button class="content red-button" id="effect1Button">Watch it</button>
+                </div>
+            </div> <!-- single container 1-->
+
+            <div class="container">
+                <div class="img-Container">
+                    <img src="https://placehold.co/600x400" alt=""/>
+                </div>
+                <div class="content-Container">
+                    <h2>Effect 2 - Loading Effect</h2>
+                    <button class="content red-button" id="effect2Button">Watch it</button>
+                </div>
+            </div> <!-- single container 2-->
+
+            <div class="container">
+                <div class="img-Container">
+                    <img src="https://placehold.co/600x400" alt=""/>
+                </div>
+                <div class="content-Container">
+                    <h2>Effect 3 - Slogan Display</h2>
+                    <button class="content red-button" id="effect3Button">Watch it</button>
+                </div>
+            </div> <!-- single container 3-->
+
+            <div class="container">
+                <div class="img-Container">
+                    <img src="https://placehold.co/600x400" alt=""/>
+                </div>
+                <div class="content-Container">
+                    <h2>Effect 4 - Slogan Slide Up</h2>
+                    <button class="content red-button" id="effect4Button">Watch it</button>
+                </div>
+            </div> <!-- single container 4-->
+
+
+        </div><!-- width-container -->
+    </section>
+</main>
+
+
+<!-- footer -->
+<footer>
+
+</footer>
+
+<!-- script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="dayscript10.js"></script>    
+
+</body>
+</html>
